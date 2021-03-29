@@ -73,3 +73,8 @@ public function getYTid($ytURL)
         }
     }
  ```
+
+
+# instead of trash code use this
+    protected const YOUTUBE = '/(youtu\.be\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v)\/))([\w-]{11})/';
+    preg_match(self::YOUTUBE, $value, $m)
